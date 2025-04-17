@@ -33,8 +33,9 @@
         <div class="container-fluid">
             <!-- Logo section -->
             <div class="logo">
-                <img class="myimg" src="{{ url_for('static', filename='img.png') }}" alt="Hospital Logo">
-            </div>
+                <img class="myimg" src="https://th.bing.com/th/id/OIP.mzuPouTsmdeTVxsEoOdOLAHaF7?rs=1&pid=ImgDetMain" alt="Hospital Logo">
+              </div>
+              
             <a class="navbar-brand" href="#">WellHealth Hospital</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -63,7 +64,7 @@
     <!-- Main Heading -->
     <h1 class="text-center">WellHealth Hospital</h1>
 
-    <div class="container mt-4 my-4" style="background:gray;color:white;border-radius:15px; padding:50px;">
+    <div class="container mt-4 my-4" style="background:rgb(171, 211, 145);color:white;border-radius:15px; padding:50px;">
       <form action="/predict" method="post">
         <div class="form-group">
           <label for ="symptoms">Enter your symptoms:</label>
@@ -99,7 +100,7 @@
               <h5 class="modal-title" id="diseaseModalLabel">Predicted Disease</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body" style="background-color: #modal-body-color;"> 
+          <div class="modal-body" style="background-color: rgb(196, 190, 190) ;"> 
               <p>{{ predicted_disease }}</p>
           </div>
       </div>
